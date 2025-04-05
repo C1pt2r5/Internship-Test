@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTOP Information</title>
+    <style>
+        body {
+            font-family: monospace;
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            margin: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        pre {
+            white-space: pre-wrap;
+            background-color: #111;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        .info-line {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="info-line">Name: {{ name }}</div>
+        <div class="info-line">user: {{ username }}</div>
+        <div class="info-line">Server Time (IST): {{ server_time }}</div>
+        <div class="info-line">TOP output:</div>
+        <pre>{{ top_output }}</pre>
+    </div>
+</body>
+</html>
+
