@@ -12,7 +12,7 @@ def htop():
     username = os.getenv('USER', subprocess.getoutput('whoami'))
     
     # Get the full name (you should replace this with your actual name)
-    name = "Your Full Name"  # Replace with your actual name
+    name = "Vaibhav Kumar"  # Replace with your actual name
     
     # Get current time in IST
     ist = pytz.timezone('Asia/Kolkata')
